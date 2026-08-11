@@ -81,7 +81,7 @@ export default function Education() {
                   whiteSpace: "nowrap",
                 }}
               >
-                Final Year · 2025
+                Final Year · 2026
               </span>
             </div>
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { GithubIcon, LinkedinIcon, MailIcon, ArrowUpRightIcon } from "./Icons";
+import { SOCIAL_LINKS } from "../config/constants";
 
 export default function Hero() {
   return (
@@ -114,17 +115,17 @@ export default function Hero() {
           >
             {[
               {
-                href: "https://github.com",
+                href: SOCIAL_LINKS.github,
                 label: "GitHub",
                 icon: <GithubIcon />,
               },
               {
-                href: "https://linkedin.com",
+                href: SOCIAL_LINKS.linkedin,
                 label: "LinkedIn",
                 icon: <LinkedinIcon />,
               },
               {
-                href: "mailto:bentembe@email.com",
+                href: `mailto:${SOCIAL_LINKS.email}`,
                 label: "Email",
                 icon: <MailIcon />,
               },
@@ -175,7 +176,7 @@ export default function Hero() {
             />
 
             <a
-              href="/resume.pdf"
+              href="../../public/docs/ben_tembe_resume_v2.pdf"
               style={{
                 fontFamily: "'IBM Plex Mono', monospace",
                 fontSize: "0.72rem",

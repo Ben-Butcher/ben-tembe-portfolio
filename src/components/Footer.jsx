@@ -22,7 +22,7 @@ export default function Footer() {
           color: "#6B7280",
         }}
       >
-        © 2025 Ben Tembe
+        © {new Date().getFullYear()} Ben Tembe
       </span>
       <span
         style={{
@@ -31,9 +31,7 @@ export default function Footer() {
           color: "#6B7280",
           opacity: 0.7,
         }}
-      >
-        Built with React + Vite
-      </span>
+      ></span>
     </footer>
   );
 }

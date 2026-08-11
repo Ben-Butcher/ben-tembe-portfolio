@@ -1,6 +1,7 @@
 import React from "react";
 import SectionLabel from "./SectionLabel";
 import { GithubIcon, LinkedinIcon } from "./Icons";
+import { SOCIAL_LINKS } from "../config/constants";
 
 export default function Contact() {
   return (
@@ -42,7 +43,7 @@ export default function Contact() {
         </p>
 
         <a
-          href="mailto:bentembe@email.com"
+          href={`mailto:${SOCIAL_LINKS.email}`}
           style={{
             fontFamily: "'IBM Plex Mono', monospace",
             fontSize: "1.1rem",
@@ -62,18 +63,18 @@ export default function Contact() {
             (e.currentTarget.style.borderColor = "rgba(52,84,209,0.3)")
           }
         >
-          bentembe@email.com
+          {SOCIAL_LINKS.email}
         </a>
 
         <div style={{ display: "flex", gap: "0.75rem", alignItems: "center" }}>
           {[
             {
-              href: "https://github.com",
+              href: SOCIAL_LINKS.github,
               label: "GitHub",
               icon: <GithubIcon />,
             },
             {
-              href: "https://linkedin.com",
+              href: SOCIAL_LINKS.linkedin,
               label: "LinkedIn",
               icon: <LinkedinIcon />,
             },
