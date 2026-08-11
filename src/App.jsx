@@ -26,15 +26,22 @@ export default function App() {
   ];
 
   const skills = {
-    Frontend: ["React", "TypeScript", "Next.js", "Tailwind CSS", "HTML/CSS"],
-    Backend: ["Node.js", "Express", "Python", "PostgreSQL", "REST APIs"],
-    "AI / Tools": ["OpenAI API", "LangChain", "Git", "Docker", "Figma"],
+    Frontend: ["JavaScript", "React", "Tailwind CSS", "HTML/CSS"],
+    Backend: [
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "REST APIs",
+      "MongoDB",
+      "Java",
+    ],
+    "AI / Tools": ["OpenAI API", "Git", "Figma"],
   };
 
   const projects = [
     {
       featured: true,
-      title: "WeGro",
+      title: "WeGro --In progress",
       subtitle: "AI-powered agricultural platform",
       description:
         "A platform connecting smallholder farmers with AI-driven crop recommendations, market price data, and agricultural advisory — reducing information asymmetry across Sub-Saharan Africa.",
@@ -46,7 +53,7 @@ export default function App() {
         "PostgreSQL",
         "Tailwind",
       ],
-      liveUrl: "https://wegro.example.com",
+
       repoUrl: "https://github.com",
       imageBg: "linear-gradient(135deg, #f0f4ff 0%, #e8f5e9 100%)",
     },
