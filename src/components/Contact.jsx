@@ -13,7 +13,7 @@ export default function Contact() {
         padding: "6rem 2rem 8rem",
       }}
     >
-      <SectionLabel prefix="$" label="contact" />
+      <SectionLabel prefix="//" label="contact" />
 
       <div style={{ maxWidth: "560px" }}>
         <h2
